@@ -1,4 +1,5 @@
 #!/bin/sh
+mkdir ~/.vim
 mkdir ~/.vim/colors
 cd ~/.vim/colors
 wget https://raw.githubusercontent.com/worm23/linuxconfig/main/vimrc.local
