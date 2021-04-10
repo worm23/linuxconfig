@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # there needs to be a .vimrc file, othervise other defaults are used that override vimrc.local
 touch ~/.vimrc
