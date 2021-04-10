@@ -19,3 +19,4 @@ else
 	mv -f solarized.vim $VIMRUNTIME/colors/
 	echo "Please also run as user!"
 fi
+
