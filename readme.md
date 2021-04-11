@@ -9,8 +9,11 @@ I installed oh-my-zsh both as root and as the user using the following commands:
 ### Root:
     su
     sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-Then change in .zshrc default theme to bira in /root/.zshrc and in the users
+
+After that change in `.zshrc` default theme to **bira** in `/root/.zshrc` and in the files of the normal user
+
 To change the default shell use
     chsh -s $(which zsh)
+    
 # Default Editor setzen
     select-editor
