@@ -1,7 +1,9 @@
 # Install Vim Themes
-Als Root User(sudo su):    
+Als Root User(sudo su):
+```
     apt-get install vim
     bash -c "$(curl -fsSL https://raw.githubusercontent.com/worm23/linuxconfig/main/installvimrc.sh)"
+```
 # install oh-my-zsh
     apt-get install zsh git
 Install oh-my-zsh both as root and as the user using the following commands:
