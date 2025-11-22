@@ -16,6 +16,7 @@ else
 	chown root:root solarized.vim
 	chmod 644 solarized.vim
 	VIMRUNTIME=`vim -e -T dumb --cmd 'exe "set t_cm=\<C-M>"|echo $VIMRUNTIME|quit' | tr -d '\015' `
+	mkdir --parents $VIMRUNTIME/colors/
 	mv -f solarized.vim $VIMRUNTIME/colors/
 	echo "Please also run as user!"
 fi
