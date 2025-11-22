@@ -7,7 +7,6 @@ if [ "$EUID" -ne 0 ]
 then
 	echo "Please run also as root!"
 else
-	source ~/.bashrc
 	wget https://raw.githubusercontent.com/worm23/linuxconfig/main/vimrc.local
 	chown root:root vimrc.local
 	chmod 644 vimrc.local
