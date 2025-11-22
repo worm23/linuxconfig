@@ -15,13 +15,13 @@ else
 	wget https://raw.github.com/altercation/vim-colors-solarized/master/colors/solarized.vim
 	chown root:root solarized.vim
 	chmod 644 solarized.vim
-	VIMRUNTIME=`vim -e -T dumb --cmd 'exe "set t_cm=\<C-M>"|echo $VIMRUNTIME|quit' | tr -d '\015' `
-	VIMRUNTIME=$(echo $VIMRUNTIME | xargs)/colors/
+	VIMCOLORS=`vim -e -T dumb --cmd 'exe "set t_cm=\<C-M>"|echo $VIMRUNTIME|quit' | tr -d '\015' `
+	VIMCOLORS=$(echo $VIMCOLORS | xargs)/colors/
 
-	if [ -d $VIMRUNTIME/colors/ ]; then
-  		mv -f solarized.vim $VIMRUNTIME/colors/
+	if [ -d $VIMCOLORS ]; then
+  		mv -f solarized.vim $VIMCOLORS
 	else
-		echo "VIM color path $VIMRUNTIME/colors/ does not exist"
+		echo "VIM color path $VIMCOLORS does not exist"
 	fi
 	echo "Please also run as user!"
 fi
